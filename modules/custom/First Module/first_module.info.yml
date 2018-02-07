@@ -1,0 +1,5 @@
+name: First custom module
+description: An example module for Drupal custom module.
+package: Custom
+type: module
+core: 8.x

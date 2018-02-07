@@ -1,0 +1,11 @@
+first_module.content:
+  path: '/content/{first}'
+  defaults:
+    _controller: '\Drupal\first_module\Controller\BasicController::content'
+    _title: 'First Module'
+  requirements:
+    _permission: 'generate example content'
+
+
+
+

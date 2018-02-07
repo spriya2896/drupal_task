@@ -1,0 +1,32 @@
+first_form.student_details:
+  path: '/student'
+  defaults:
+    _form: '\Drupal\first_form\Form\StudentDetails'
+    _title: 'Student Details'
+  requirements:
+    _access: 'TRUE'
+
+first_form.college_details:
+  path: '/college'
+  defaults:
+    _form: '\Drupal\first_form\Form\CollegeDetails'
+    _title: 'College Details'
+  requirements:
+    _access: 'TRUE' 
+
+first_form.add_data:
+  path: '/display'
+  defaults:
+    _controller: '\Drupal\first_form\Controller\Display::showdata'
+    _title: 'Display'
+  requirements:
+    _permission: 'access content'
+
+first_form.student-form:
+  path: '/student-form/{first}'
+  defaults:
+    _controller: '\Drupal\first_form\Controller\LinkController::content'
+    _title: 'Display'
+  requirements:
+    _permission: 'access content'
+

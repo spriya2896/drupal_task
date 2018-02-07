@@ -1,0 +1,23 @@
+first_form.student_details:
+  title: 'Student Details'
+  description: 'Student Details'
+  route_name: first_form.student_details
+  parent:  system.admin_config
+  menu_name: first_form
+  weight: 1
+ 
+first_form.college_details:
+  title: 'College Details'
+  description: 'College Details'
+  route_name: first_form.college_details
+  parent: system.admin_config
+  menu_name: first_form
+  weight: 1
+
+first_form.add_data:
+  title: 'Display Details'
+  description: 'Displays student  Details'
+  route_name: first_form.add_data
+  parent: system.admin_config
+  menu_name: first_form
+  weight: 1  

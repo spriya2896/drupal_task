@@ -1,0 +1,5 @@
+name: first form
+description: First form in custom module.
+package: Custom
+type: module
+core: 8.x 

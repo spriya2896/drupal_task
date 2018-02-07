@@ -1,0 +1,35 @@
+<?php
+namespace Drupal\first_module\Controller;
+use Drupal\Core\Controller\ControllerBase;
+class BasicController extends ControllerBase {
+  /**
+   * Display markup.
+   *
+   * @return array
+   */
+  public function content($first) {
+    if(is_numeric($first)){
+    $user_load = user_load($first);
+     if(!empty($user_load)){
+return [
+'#markup' => t($user_load->name->getString())
+];
+
+}
+ $node_load = node_load($first);
+if(!empty($node_load)){
+return [
+'#markup' => t($node_load->title->getString())
+];
+}
+return [
+'#markup' => t('value not found')
+];
+}
+  return [
+'#markup' => t($first)
+];   
+
+}
+   
+}
